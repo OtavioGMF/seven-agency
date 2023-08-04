@@ -1,0 +1,154 @@
+button{
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    color: #DAA520;
+    font-family: Arial, Helvetica, sans-serif;
+    right: 0px;
+    width: 200px;
+    border: 3px solid #DAA520;
+    padding: 10px;
+    position: relative;
+    border-top-right-radius: 0%;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+  }
+  .box-1 { 
+  background-color: #000000;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  padding-left: 5%;
+  display: flex;
+  }
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+.btn-one {
+  color: #FFF;
+  transition: all 0.3s;
+  position: relative;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: transparent;
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+div[class*=box] {
+  justify-content: center;
+  align-items: center;
+}
+p{
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div1{
+    background-color: #000000;
+    position: absolute;
+    width: 100%;
+    top: 726px;
+    right: 0px;
+    color: #000000;
+}
+p1{
+  color: #DAA520;
+  font-size: 17px;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+.wrapper{
+  position: fixed;
+  top: 60%;
+  left: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.link_wrapper{
+  position: relative;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #000000;
+  transition: all .35s;
+}
+a{
+  text-decoration: none;
+}
